@@ -2,7 +2,17 @@
   "scopeName": "source.theodore",
   "name": "Theodore",
   "patterns": [
-    { "match": "\\b(implE|implI|exact|todo|conjI|conjE|negI|negE)\\b", "name": "keyword.control.theodore" },
+    { "match": "\\b(ToDo)\\b", "name": "variable.language.theodore" },
+    { "match": "\\b(Exact)\\b", "name": "keyword.other.unit.theodore" },
+    { "match": "\\b(ImplI|ImplE)\\b", "name": "storage.type.theodore" },
+    { "match": "\\b(ConjI|ConjE)\\b", "name": "entity.name.function.theodore" },
+    { "match": "\\b(DisjlI|DisjrI|DisjE)\\b", "name": "support.constant.theodore" },
+    { "match": "\\b(NegI|NegE)\\b", "name": "keyword.control.theodore" },
+    { "match": "\\b(EqivI|EqivE)\\b", "name": "constant.other.theodore" },
+    { "match": "\\b(AllsI|AllsE|ExisI|ExisE)\\b", "name": "entity.name.tag.theodore" },
+    { "match": "\\b(All|Ex|True|False)\\b", "name": "constant.language.theodore" },
+    { "match": "(->|&|\\||~|<->)", "name": "keyword.operator.logical.theodore" },
+    { "match": "\\b(lemma|assumption|macro)\\b", "name": "keyword.other.declaration.theodore" },
     { "match": "--.*$", "name": "comment.line.double-dash.theodore" },
     { "match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b", "name": "variable.other.theodore" }
   ]
